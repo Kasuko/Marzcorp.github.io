@@ -3,20 +3,54 @@
    ========================================================================== */
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    height: 100%;
+}
+
 body {
-  padding-top: 50px;
+    display: table;
+    width: 100%;
+    background-image: url("../img/light_grey.png");
+    padding-top: 55px;
+}
+
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+
+.page-content {
+    display: table-row;
+    height: 100%;
+}
+
+.foot {
+  text-size: 85%;
 }
 
 .welcome {
-	text-align: center;
+  text-align: center;
+  padding: 20px 20px;
 }
+
+.social {
+  text-align: right;
+}
+
+.inverse {
+  background: fade-out(black, 0.05);
+  color: #888;
+}
+
+
+

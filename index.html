@@ -41,7 +41,7 @@ layout: default
   <div class="row">
     <div class="col-md-8 col-md-offset-2 welcome">
       <h1> Marzcorp Oil &amp; Gas Inc. </h1>
-      <p>One of the world's newest opportunities for oil and gas. Marzcorp Inc. owns 100% interest in the in the Matap&eacute;dia Valley, Gasp&eacute;sie, Quebec.</p>
+      <h3><strong>One of the world's newest opportunities for oil and gas.</strong></h3>
     </div>
   </div>
 
@@ -51,6 +51,7 @@ layout: default
         <div class="thumbnail">
           <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
           <div class="caption">
+            <h6 class="pull-right">{{ post.date | date: "%b %-d, %Y" }}</h6>
             <h3>{{ post.title }}</h3>
             {{ post.excerpt }}
             <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary" role="button">Learn More</a></p>
